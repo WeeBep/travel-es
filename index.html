@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Font Awesome para social icons -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Costume CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Complete Materialize Website</title>
+</head>
+
+<!-- Scrollspy es para el smoothscroll -->
+
+<body id="home" class="scrollspy">
+    <!-- Navbar -->
+    <!-- Lo wrappeamos en eso para que este fixed -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <a href="#" class="brand-logo">WeeBep</a>
+                    <!-- Hamburger -->
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <!-- Desktop menu -->
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#search">Search</a>
+                        </li>
+                        <li>
+                            <a href="#popular">Popular Places</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <!-- El id tiene que matchear con el data-trigger del hamburger de arriba -->
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#search">Search</a>
+        </li>
+        <li>
+            <a href="#popular">Popular Places</a>
+        </li>
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+            <a href="#Contact">Contact</a>
+        </li>
+    </ul>
+
+    <!-- Section: Slider -->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/resort1.jpg">
+                <div class="caption center-align">
+                    <h2>Take Your Dream Vacation</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aperiam!</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/resort2.jpg">
+                <div class="caption left-align">
+                    <h2>We Work With All Budgets</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, voluptate.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/resort3.jpg">
+                <div class="caption right-align">
+                    <h2>Group & Individual Getaways</h2>
+                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nesciunt?</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section: Search -->
+    <!-- La clase de section le da padding, el scrollspy es para vincularlo con el navbar y hacer smooth scroll, center centra horizontalmente -->
+    <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Search Destinations</h3>
+                    <div class="input-field">
+                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Aruba, Cancún, etc...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Icon Boxes -->
+    <!-- Poniendo el center aca se va a aplicar para todos los hijos y nietos -->
+    <section class="section section-icons grey lighten-4 center">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <!-- Card-panel es como una card -->
+                    <div class="card-panel">
+                        <!-- Large lo hace más grande -->
+                        <i class="material-icons large teal-text">room</i>
+                        <h4>Pick Where</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ratione!</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <i class="material-icons large teal-text">store</i>
+                        <h4>Travel Shop</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ratione!</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <i class="material-icons large teal-text">airplanemode_active</i>
+                        <h4>Fly Cheap</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ratione!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Popular Places -->
+    <section id="popular" class="section section-popular scrollspy">
+        <div class="container">
+            <div class="row">
+                <h4 class="center">
+                    <span class="teal-text">Popular</span> Places</h4>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/resort1.jpg">
+                            <!-- Esto hace que se vea sobre la imágen -->
+                            <span class="card-title">Cancún, México</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex consectetur obcaecati temporibus maiores quidem.
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/resort2.jpg">
+                            <span class="card-title">The Bahamas</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex consectetur obcaecati temporibus maiores quidem.
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/resort3.jpg">
+                            <span class="card-title">Nova Scotia</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ex consectetur obcaecati temporibus maiores quidem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Follow -->
+    <section class="section section-follow teal darken-2 white-text center">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Follow WeeBep</h4>
+                    <p>Follow us on social media for special offers</p>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-facebook fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-twitter fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-facebook fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-linkedin fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-google-plus fa-4x"></i>
+                    </a>
+                    <a href="#" class="white-text">
+                        <i class="fab fa-pinterest fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Gallery -->
+    <section id="gallery" class="section section-gallery scrollspy">
+        <div class="container">
+            <h4 class="center">
+                <span class="teal-text">Photo</span> Gallery
+            </h4>
+            <div class="row">
+                <div class="col s12 m3">
+                    <!-- Despues del signo de pregunta le podemos poner keywords para seleccionar imagenes -->
+                    <img src="https://source.unsplash.com/1600x900/?beach" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?travel" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?nature" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?beach, travel" class="materialboxed responsive-img">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?water" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?building" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?trees" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?cruise" class="materialboxed responsive-img">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?beaches" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?traveling" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?bridge" class="materialboxed responsive-img">
+                </div>
+                <div class="col s12 m3">
+                    <img src="https://source.unsplash.com/1600x900/?beach, travel, boat" class="materialboxed responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section id="contact" class="section section-contact scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel teal white-text center">
+                        <i class="material-icons">email</i>
+                        <h5>Contact Us For Booking</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius odio veniam ad, deserunt aperiam reprehenderit
+                            tempora placeat natus commodi dolorum.</p>
+                    </div>
+                    <!-- Esto es como una tablita -->
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h4>Location</h4>
+                        </li>
+                        <li class="collection-item">WeeBep Agency</li>
+                        <li class="collection-item">555 Beach Rd, Suite 33</li>
+                        <li class="collection-item">Miami, FL 55555</li>
+                    </ul>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel grey lighten-3">
+                        <h5>Please fill out this form</h5>
+                        <form action="">
+                            <div class="input-field">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="input-field">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="Phone">
+                            </div>
+                            <div class="input-field">
+                                <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+                            </div>
+                            <input type="submit" value="Submit" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section teal darken-2 white-text center">
+        <p class="flow-text">WeeBep &copy; 2018</p>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+        // Sidenav
+        const sideNav = document.querySelector(".sidenav");
+        // M es el objeto de materialize. Le pasamos nuestro sidenav y el segundo parametro son las opciones, en este caso simplemente lo dejamos vacio
+        M.Sidenav.init(sideNav, {});
+
+        // Slider
+        const slider = document.querySelector(".slider");
+        M.Slider.init(slider, {
+            // Puntitos para cambiar de img
+            indicators: false,
+            // Alto del slider
+            height: 500,
+            // Ni idea
+            transition: 500,
+            // Intervalo entre imagenes
+            interval: 6000
+        });
+
+        // Autocomplete input search
+        const ac = document.querySelector(".autocomplete");
+        M.Autocomplete.init(ac, {
+            // Estos son los datos que nos va a tirar el form cuando escribamos, como sugerencias
+            data: {
+                // Da igual si ponemos las comillas o no
+                Aruba: null,
+                "Cancún México": null,
+                Hawai: null,
+                "Florida": null,
+                "California": null,
+                "Jamaica": null,
+                "Europe": null
+            }
+        });
+
+        // Materialboxed, modals photo gallery
+        // Asegurarse de usar el All si son muchas
+        const mb = document.querySelectorAll(".materialboxed");
+        M.Materialbox.init(mb, {});
+
+        // ScrollSpy (smooth scroll)
+        const ss = document.querySelectorAll(".scrollspy");
+        M.ScrollSpy.init(ss, {});
+    </script>
+</body>
+
+</html>
